@@ -1,0 +1,23 @@
+{
+  "name": "relay-modern-crud",
+  "version": "1.0.0",
+  "description": "CRUD operation using relay modern and graphql with prisma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shamrat17/relay-modern-crud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shamrat17/relay-modern-crud/issues"
+  },
+  "homepage": "https://github.com/shamrat17/relay-modern-crud#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
