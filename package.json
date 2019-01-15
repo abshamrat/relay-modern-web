@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "babel ./client/src/App.js",
     "relay": "relay-compiler --src ./src --schema ./src/schema/schema.graphql --watch"
   },
   "repository": {
@@ -19,11 +20,20 @@
   },
   "homepage": "https://github.com/shamrat17/relay-modern-crud#readme",
   "dependencies": {
-    "babel-plugin-relay": "^1.7.0",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
     "express": "^4.16.4",
     "graphql": "^14.0.2",
+    "react": "^16.7.0",
     "react-relay": "^1.7.0",
     "relay-compiler": "^1.7.0",
     "relay-runtime": "^1.7.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-react-relay": "^0.10.0",
+    "babel-plugin-relay": "^1.7.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1"
   }
 }
