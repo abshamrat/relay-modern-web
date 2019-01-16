@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import './App.css';
 
 class App extends Component {
-  constructor(){
-    state = {
+  constructor(props){
+    super(props)
+    this.state = {
         response: '',
         post: '',
         responseToPost: '',

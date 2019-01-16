@@ -1,17 +1,16 @@
 const path = require('path');
-const webpack = require('webpack');
 
 module.exports = {
     context: __dirname,
     mode: 'development',
-    entry:  "./src/main.js",
+    entry:  __dirname + "/src/main.js",
     output: {
-        path: path.resolve(__dirname, "./dist"),
-        filename: "bundle.js", 
+        path: __dirname + "/dist",
+        filename: "index.js", 
         publicPath: "/assets/",
     },
     devServer: {
-        contentBase: PATHS.dist,
+        contentBase: __dirname + "/dist",
         compress: true,
         headers: {
             'X-Content-Type-Options': 'nosniff',
@@ -27,12 +26,16 @@ module.exports = {
             {
                 test: /\.(js|jsx)?$/,
                 exclude: [
-                    path.resolve(__dirname, "/node_modules")
+                     "/node_modules"
                   ],
-                loader: "babel-loader",
+                loader: 'babel-loader',
                 options: {
-                    presets: ["es2015", "react"]
+                  presets: ['es2015', 'react']
                 }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
             }
         ]
     }
