@@ -1,42 +1,61 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WebpackMd5Hash = require('webpack-md5-hash');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
-    context: __dirname,
-    mode: 'development',
-    entry:  __dirname + "/src/main.js",
+    entry: { main: './src/main.js' },
     output: {
-        path: __dirname + "/dist",
-        filename: "index.js", 
-        publicPath: "/assets/",
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].[hash].js'
     },
+    devtool: 'inline-source-map',
     devServer: {
-        contentBase: __dirname + "/dist",
-        compress: true,
-        headers: {
-            'X-Content-Type-Options': 'nosniff',
-            'X-Frame-Options': 'DENY'
-        },
-        open: true,
-        inline: true,
-        port: 8081,
-        hot: true
+        contentBase: './src/html/',
+        open: true
     },
     module: {
         rules: [
             {
-                test: /\.(js|jsx)?$/,
-                exclude: [
-                     "/node_modules"
-                  ],
-                loader: 'babel-loader',
-                options: {
-                  presets: ['es2015', 'react']
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['es2015', 'react']
+                    }
                 }
             },
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
+                test: /\.(scss|css)$/,
+                use: [
+                    'style-loader',
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'postcss-loader',
+                    'sass-loader'
+                ]
             }
         ]
-    }
-}
+    },
+    plugins: [
+        new CleanWebpackPlugin('dist', {}),
+        new MiniCssExtractPlugin({
+            filename: 'style.[contenthash].css'
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/html/index.html',
+            filename: 'index.html'
+        }),
+        new WebpackMd5Hash(),
+        new StyleLintPlugin({
+            configFile: './stylelint.config.js',
+            files: './src/scss/*.scss',
+            syntax: 'scss'
+        })
+    ]
+};
