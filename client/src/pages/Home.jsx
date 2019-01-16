@@ -41,8 +41,7 @@ class Home extends Component {
                                 mode="inline"
                                 defaultSelectedKeys={['1']}
                                 defaultOpenKeys={['side']}
-                                style={{ height: '100%' }}
-                            >
+                                style={{ height: '100%' }}>
                                 <Menu.Item key="1">Create</Menu.Item>
                                 <Menu.Item key="2">Read</Menu.Item>
                                 <Menu.Item key="3">Update</Menu.Item>

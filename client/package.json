@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dist": "NODE_ENV=development webpack-dev-server --mode=development --hot"
+    "dist": "NODE_ENV=development webpack-dev-server --mode=development --hot --inline"
   },
   "keywords": [],
   "author": "",
