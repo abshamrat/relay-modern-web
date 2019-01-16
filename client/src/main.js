@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App.jsx';
+import Home from './pages/Home.jsx';
+import "antd/dist/antd.css";
 import 'ant-design-pro/dist/ant-design-pro.css'; 
-import Result from 'ant-design-pro/lib/Result';
 
-ReactDOM.render(<Result type="success" />, document.getElementById('app'));
+ReactDOM.render(<Home/>, document.getElementById('app'));
