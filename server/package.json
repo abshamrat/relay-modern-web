@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "babel index.js",
+    "prisma": "prisma init server",
+    "prisma-deploy": "cd server && prisma deploy",
     "relay": "relay-compiler --src ./src --schema ./src/schema/schema.graphql --watch"
   },
   "repository": {
@@ -36,8 +38,9 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.5",
+    "babel-plugin-relay": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "babel-plugin-relay": "^1.7.0"
+    "prisma": "^1.24.0"
   }
 }

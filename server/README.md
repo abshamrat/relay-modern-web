@@ -9,3 +9,5 @@ This command will install five dependencies in your project:
 - morgan: This is a library that adds some logging capabilities to your Express app.
 
 https://auth0.com/blog/react-tutorial-building-and-securing-your-first-app/
+
+https://www.prisma.io/docs/prisma-graphql-api/prisma-bindings/prisma-bindings-prb1/
