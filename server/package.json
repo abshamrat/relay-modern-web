@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "babel index.js",
-    "prisma": "prisma init server",
-    "prisma-deploy": "cd server && prisma deploy",
+    "prisma": "prisma init prisma",
+    "prisma-deploy": "cd prisma && prisma deploy",
+    "prisma-up": "cd prisma && docker-compose up",
     "relay": "relay-compiler --src ./src --schema ./src/schema/schema.graphql --watch"
   },
   "repository": {

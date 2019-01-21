@@ -11,3 +11,5 @@ This command will install five dependencies in your project:
 https://auth0.com/blog/react-tutorial-building-and-securing-your-first-app/
 
 https://www.prisma.io/docs/prisma-graphql-api/prisma-bindings/prisma-bindings-prb1/
+
+https://blog.pusher.com/fullstack-graphql-app-prisma-apollo-vue/
