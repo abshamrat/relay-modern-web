@@ -23,3 +23,23 @@ CRUD operation using relay modern and graphql with prisma
 Once the server is started you can access the following URLs:
 - Server: http://localhost:8484/
 - Client: http://localhost:8484/
+
+## Libraries
+- in progress
+## Available build script
+- in progress
+## Unit Tests and Coverage
+- in progress
+
+## CI-CD
+This repository uses [CircleCI](https://circleci.com/gh/omerio/employee-microservice-node) for continuous integration and deployment. Circle CI configuration is in the [`.circleci/config.yml`](./circleci/config.yml) file 
+
+## Docker
+- in progress
+## TODO
+- Mutation
+- QueryRenderer
+- Add authentication
+
+## Links
+- [Relay](https://facebook.github.io/relay/docs/en/introduction-to-relay.html)
