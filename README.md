@@ -1,5 +1,5 @@
 ## relay-modern-web
-[![CircleCI](https://circleci.com/gh/omerio/employee-microservice-node.svg?style=svg)](https://circleci.com/gh/omerio/employee-microservice-node) [![codecov](https://codecov.io/gh/omerio/employee-microservice-node/branch/master/graph/badge.svg)](https://codecov.io/gh/omerio/employee-microservice-node)
+[![CircleCI](https://circleci.com/gh/shamrat17/relay-modern-web.svg?style=svg)](https://circleci.com/gh/shamrat17/relay-modern-web) [![codecov](https://codecov.io/gh/shamrat17/relay-modern-web/branch/master/graph/badge.svg)](https://codecov.io/gh/shamrat17/relay-modern-web)
 
 CRUD operation using relay modern and graphql with prisma
 
