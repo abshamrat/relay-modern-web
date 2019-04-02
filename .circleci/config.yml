@@ -18,8 +18,6 @@ jobs:
 
     steps:
       - checkout
-
-      - run: cd server
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -27,11 +25,15 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: npm install
+      - run: |
+        cd server
+        npm install
       - save_cache:
           paths:
             - server/node_modules
           key: v1-dependencies-{{ checksum "server/package.json" }}
 
       # run tests!
-      - run: npm test
+      - run: |
+        cd server
+        npm test
