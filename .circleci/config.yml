@@ -25,15 +25,17 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: |
-        cd server
-        npm install
+      - run: 
+          command: |
+            cd server
+            npm install
       - save_cache:
           paths:
             - server/node_modules
           key: v1-dependencies-{{ checksum "server/package.json" }}
 
       # run tests!
-      - run: |
-        cd server
-        npm test
+      - run: 
+          command: |
+            cd server
+            npm install
