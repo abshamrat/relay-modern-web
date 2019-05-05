@@ -9,7 +9,8 @@ module.exports = {
     entry: { main: './src/main.js' },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[hash].js'
+        filename: 'bundle.js'
+        // filename: '[name].[hash].js'
     },
     devtool: 'inline-source-map',
     devServer: {
