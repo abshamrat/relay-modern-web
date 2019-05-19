@@ -1,0 +1,7 @@
+.postBox{
+    width: 100%;
+    padding: 15px;
+}
+.postHead, .postBody {
+    width: 100%;
+}

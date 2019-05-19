@@ -1,5 +1,19 @@
-function Home() {
-    return <div>Welcome to Next.js!</div>;
+import React from 'react';
+import style from './index.css';
+import Post from '../components/post';
+
+class Home extends React.Component {
+  constructor(props) {
+    super(props)
   }
-  
-  export default Home;
+  render() {
+    return (
+      <div className={style.contentFluid}>
+        <Post/>
+        <Post/>
+      </div>
+    );
+  }
+}
+
+export default Home;
