@@ -1,0 +1,17 @@
+.postBox{
+    display: block;
+    padding: 15px;
+    margin: 15px;
+    cursor: pointer;
+    background: #ffffff;
+}
+.postHead, .postBody {
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.postHead {
+    color: darksalmon;
+}
+.postBody {
+    color: #777777;
+}

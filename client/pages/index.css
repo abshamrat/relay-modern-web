@@ -1,0 +1,22 @@
+body {
+    background: #fafafa;
+}
+.contentFluid{
+    width: 60%;
+    margin-left: 20%;
+}
+.row {
+    display: table;
+    width: 100%;
+}
+.row:after{
+    clear: both;
+}
+.col8{
+    float: left;
+    width: 66.65%;
+}
+.col4{
+    float: left;
+    width: 33.33%;
+}
