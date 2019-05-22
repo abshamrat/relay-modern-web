@@ -1,0 +1,23 @@
+type Query {
+    getPosts: [Post]
+    post(id: ID!):Post
+}
+
+type Mutation {
+    createPost(createPostInput: CreatePostInput): Post
+}
+
+type Subscription {
+    postCreated: Post
+}
+
+type Post {
+    id: Int
+    title: String
+    content: String
+}
+
+type CreatePostInput {
+    title: String
+    content: String
+}
