@@ -17,7 +17,7 @@ type Post {
     content: String
 }
 
-type CreatePostInput {
+input CreatePostInput {
     title: String
     content: String
 }

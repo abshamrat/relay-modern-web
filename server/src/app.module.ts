@@ -3,12 +3,14 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { GraphQLModule } from '@nestjs/graphql';
 import { CatsModule } from './cats/cats.module';
+import { PostsModule } from './posts/posts.module';
 import {join} from 'path';
 
 
 @Module({
   imports: [
     CatsModule,
+    PostsModule,
     GraphQLModule.forRoot({
       typePaths: ['./**/*.graphql'],
       installSubscriptionHandlers: true,
