@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "relay": "relay-compiler --src ./ --schema ./schema.graphql --extensions js jsx",
     "start": "next start"
   },
   "keywords": [],
@@ -14,8 +15,17 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-stylus": "^1.0.1",
+    "isomorphic-fetch": "^2.2.1",
     "next": "^8.1.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-relay": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-macros": "^2.5.1",
+    "babel-plugin-relay": "^4.0.0",
+    "babel-preset-react-app": "^9.0.0",
+    "graphql": "^14.3.1",
+    "relay-compiler": "^4.0.0"
   }
 }
