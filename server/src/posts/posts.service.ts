@@ -8,7 +8,17 @@ export class PostsService {
             id:1,
             title: 'This is my first title',
             content: 'lorem ipsum dolor sit, content will be visible in pitch'
-        }
+        },
+        {
+            id:1,
+            title: 'This is my first title',
+            content: 'lorem ipsum dolor sit, content will be visible in pitch'
+        },
+        {
+            id:1,
+            title: 'This is my first title',
+            content: 'lorem ipsum dolor sit, content will be visible in pitch'
+        },
     ];
 
     create(post: Post): Post {

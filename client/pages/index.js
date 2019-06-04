@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, QueryRenderer} from 'react-relay';
 import Post from '../components/post';
 import Header from '../components/header';
-import style from './index.css';
+import style from './global.css';
 import environment  from '../utils/relayEnvironment';
 
 class Home extends React.Component {
