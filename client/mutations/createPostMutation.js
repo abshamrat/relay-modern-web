@@ -2,7 +2,7 @@ import {
     commitMutation,
     graphql,
   } from 'react-relay'
-import environment from '../../utils/relayEnvironment';
+import environment from '../utils/relayEnvironment';
 
 const mutation = graphql`
   mutation createPostMutation($input: CreatePostInput!) {

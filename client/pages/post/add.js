@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import style from 'bootstrap/dist/css/bootstrap.css';
-import createPostMutation from '../mutations/createPostMutation';
+import createPostMutation from '../../mutations/createPostMutation';
 
 class Add extends Component {
+
     state = {
-        title:'', 
+        title: '',
         content: ''
     }
+
     constructor(props) {
-        super(props);
-        console.log();
+        super(props);       
         this.createPost = this.createPost.bind(this);
     }
 
