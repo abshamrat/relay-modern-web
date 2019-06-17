@@ -5,7 +5,7 @@ import {
 } from '../actions/actionTypes';
 
 const initialState = {
-    player: {},
+    post: {},
     _loading: false,
     error: "",
 };
@@ -23,7 +23,7 @@ export default function (state = initialState, action) {
                 post: { ...action.payload},
                 _loading: false
             };
-        case FETCH_POST_ERROR:
+        case FETCH_POST_FAIL:
             return {
                 ...state,
                 error: action.payload,
