@@ -21,7 +21,7 @@ async function bootstrap() {
     .build();
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('api', app, document);
-
+  app.enableCors();
   await app.listen(3001);
   // If you're running your Nest instance inside of a docker container you will need to specify the host, like so:
   // await app.listen(3000, '0.0.0.0');
