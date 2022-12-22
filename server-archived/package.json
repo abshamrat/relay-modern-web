@@ -42,6 +42,6 @@
     "babel-plugin-relay": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "prisma": "^1.24.0"
+    "prisma": "^1.34.12"
   }
 }
